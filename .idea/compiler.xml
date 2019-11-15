@@ -6,20 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="service-zuul" />
-        <module name="config-server" />
-        <module name="cloudconfig" />
+        <module name="service-hi" />
         <module name="service-feign" />
         <module name="eureka-server" />
-        <module name="service-hi" />
         <module name="service-ribbon" />
         <module name="ppcloud" />
-        <module name="config-client" />
+        <module name="service-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloudconfig" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-server" target="1.5" />
       <module name="demo" target="1.8" />
+      <module name="eureka-server1" target="1.8" />
       <module name="service-hi-1" target="1.8" />
+      <module name="springcloudconfig" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -29,6 +31,7 @@
       <module name="config-server" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="eureka-server1" options="-parameters" />
       <module name="ppcloud" options="-parameters" />
       <module name="service-feign" options="-parameters" />
       <module name="service-hi" options="-parameters" />
